@@ -1,0 +1,28 @@
+<?php
+// core/models/Category.php
+require_once 'BaseModel.php';
+
+class Category extends BaseModel {
+    public $id_kategori;
+    public $nama_kategori;
+    public $deskripsi_kategori;
+
+    public function getById($id) {
+        $id = (int)$id;
+        $res = $this->query("SELECT * FROM kategori WHERE id_kategori = {$id}");
+        return $this->fetch($res);
+    }
+
+    public function getCategoryProducts($id) {
+        $id = (int)$id;
+        $res = $this->query("SELECT * FROM produk WHERE id_kategori = {$id}");
+        $rows = [];
+        while ($r = $this->fetch($res)) $rows[] = $r;
+        return $rows;
+    }
+
+    public function addProductToCategory($productId, $categoryId) {
+        $productId = (int)$productId; $categoryId = (int)$categoryId;
+        return $this->query("UPDATE produk SET id_kategori={$categoryId} WHERE id_produk={$productId}");
+    }
+}
