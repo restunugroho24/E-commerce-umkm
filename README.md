@@ -1,4 +1,4 @@
-![alt text](https://drive.google.com/drive/folders/1LxFIJjq77xor4foZmeYl9vdwdohawfJC?raw=true)
+![alt text](https://github.com/restunugroho24/E-commerce-umkm/blob/cf4bd3aead2f633e5f8b02e656b8b4032e967e26/Screenshot%202026-01-27%20114229.png)
 
 # ecommerce_umkm - OOP Refactor
 
