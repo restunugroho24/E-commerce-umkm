@@ -1,3 +1,5 @@
+![alt text](https://drive.google.com/drive/folders/1LxFIJjq77xor4foZmeYl9vdwdohawfJC?raw=true)
+
 # ecommerce_umkm - OOP Refactor
 
 File penting:
